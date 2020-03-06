@@ -7,8 +7,10 @@ function cencel() {
 function insert(num) {
 	if (!document.form.resultview.value.includes('Error')) {
 		memory = document.form.resultview.value;
-		if (count == 0) {
+		if (count == 0 && num != '.') {
 			document.form.resultview.value = '';
+			count++;
+		} else {
 			count++;
 		}
 		if (document.form.resultview.value.length <= 24) {
@@ -30,6 +32,10 @@ function backspace() {
 		memory = document.form.resultview.value;
 		var result = document.form.resultview.value;
 		document.form.resultview.value = result.substring(0, result.length - 1);
+		if (memory.length == 1) {
+			count = 0;
+			document.form.resultview.value = '0';
+		}
 	}
 }
 function equal() {
