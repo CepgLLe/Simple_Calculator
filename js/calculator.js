@@ -1,7 +1,7 @@
 var memory;
 var count = 0;
 
-function cencel() {
+function cancel() {
 	document.form.resultview.value = memory;
 }
 function insert(num) {
