@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator JS</title>
+	<link rel="stylesheet" href="css/calculator.css">
+	<script type="text/javascript" src="js/calculator.js"></script>
+</head>
+<body>
+		<div class="conteiner">
+			<!--Result: input/output-->
+			<div class="result"><form name="form"><input type="text" name="resultview" value="0" readonly></form></div>
+			<!--Parenthesis open-->
+			<div class="item calc_fun" onclick="insert('(')">(</div>
+			<!--Cencel-->
+			<div class="item" onclick="cencel()">CE</div>
+			<!--Clean-->
+			<div class="item" onclick="clean()">C</div>
+			<!--Backspace-->
+			<div class="item" onclick="backspace()">&#8656;</div>
+			<!--Division-->
+			<div class="item" onclick="insert('/')">&#8274;</div>
+			<!--Parenthesis close-->
+			<div class="item calc_fun" onclick="insert(')')">)</div>
+			<!--Number 7-->
+			<div class="item numbers" onclick="insert('7')">7</div>
+			<!--Number 8-->
+			<div class="item numbers" onclick="insert('8')">8</div>
+			<!--Number 9-->
+			<div class="item numbers" onclick="insert('9')">9</div>
+			<!--Multiply-->
+			<div class="item" onclick="insert('*')">&#735;</div>
+			<!--Root-->
+			<div class="item calc_fun" onclick="root()">&#8730;</div>
+			<!--Number 4-->
+			<div class="item numbers" onclick="insert('4')">4</div>
+			<!--Number 5-->
+			<div class="item numbers" onclick="insert('5')">5</div>
+			<!--Number 6-->
+			<div class="item numbers" onclick="insert('6')">6</div>
+			<!--Subtraction-->
+			<div class="item" onclick="insert('-')">-</div>
+			<!--Percent-->
+			<div class="item calc_fun" onclick="percent()">%</div>
+			<!--Number 1-->
+			<div class="item numbers" onclick="insert('1')">1</div>
+			<!--Number 2-->
+			<div class="item numbers" onclick="insert('2')">2</div>
+			<!--Number 3-->
+			<div class="item numbers" onclick="insert('3')">3</div>
+			<!--Addition-->
+			<div class="item" onclick="insert('+')">+</div>
+			<!--1/x-->
+			<div class="item calc_fun" onclick="one_div_x()">1/x</div>
+			<!--Number 0-->
+			<div class="item numbers number0" onclick="insert('0')">0</div>
+			<!--Point-->
+			<div class="item" onclick="insert('.')">.</div>
+			<!--Equal-->
+			<div class="item equal" onclick="equal()">&#61;</div>
+		</div>
+</body>
+</html>
